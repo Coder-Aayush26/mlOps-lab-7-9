@@ -1,0 +1,48 @@
+{
+  "trained_at_utc": "2026-11-06T13:52:20+00:00",
+  "model_type": "random_forest",
+  "model_params": {
+    "n_estimators": 100,
+    "max_depth": 5,
+    "C": 1.0,
+    "max_iter": 1000
+  },
+  "features": [
+    "mean_radius",
+    "mean_texture",
+    "mean_perimeter",
+    "mean_area",
+    "mean_smoothness",
+    "mean_compactness",
+    "mean_concavity",
+    "mean_concave_points",
+    "mean_symmetry",
+    "mean_fractal_dimension"
+  ],
+  "engineered_features": [
+    "area_to_perimeter",
+    "radius_to_texture"
+  ],
+  "target": "target",
+  "class_names": {
+    "0": "malignant",
+    "1": "benign"
+  },
+  "random_state": 42,
+  "test_size": 0.2,
+  "dataset_sha256": "81ffeb4947abad002794ab770264d02354e868265d3997a053a3775f73878265",
+  "metrics": {
+    "accuracy": 0.956140350877193,
+    "precision": 0.971830985915493,
+    "recall": 0.9583333333333334,
+    "f1": 0.965034965034965,
+    "roc_auc": 0.9917328042328042,
+    "cv_f1_mean": 0.9443513034373577,
+    "cv_f1_std": 0.024441070812383444
+  },
+  "mlflow_run_id": "0bf54084e9024c1ca5b8f35d69db24bf",
+  "versions": {
+    "python": "3.11.18",
+    "scikit-learn": "1.8.0"
+  }
+}

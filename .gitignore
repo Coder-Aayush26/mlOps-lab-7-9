@@ -1,0 +1,20 @@
+# environments / caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# secrets
+.env
+*.pem
+*.key
+# MLflow local state
+mlruns/
+mlartifacts/
+mlflow.db
+# generated data (versioned with DVC, not git)
+/data/processed/
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/

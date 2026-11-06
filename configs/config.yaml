@@ -1,0 +1,48 @@
+# All changeable values live here (or are overridden by CLI args / env vars).
+# Run:  python -m src.train --config configs/config.yaml
+
+data:
+  raw_path: data/raw/breast_cancer.csv        # DVC-tracked (see data/raw/breast_cancer.csv.dvc)
+  processed_dir: data/processed
+  target: target
+  class_names: {0: malignant, 1: benign}      # mapping used for human-readable labels
+  features:
+    - mean_radius
+    - mean_texture
+    - mean_perimeter
+    - mean_area
+    - mean_smoothness
+    - mean_compactness
+    - mean_concavity
+    - mean_concave_points
+    - mean_symmetry
+    - mean_fractal_dimension
+  # values <= 0 are invalid for these; values < 0 are invalid for every other feature
+  strictly_positive:
+    - mean_radius
+    - mean_texture
+    - mean_perimeter
+    - mean_area
+
+training:
+  random_state: 42
+  test_size: 0.2
+  cv_folds: 5
+
+model:
+  type: random_forest        # random_forest | logistic_regression | gradient_boosting
+  n_estimators: 100
+  max_depth: 5
+  C: 1.0                     # used by logistic_regression
+  max_iter: 1000             # used by logistic_regression
+
+paths:
+  model_path: models/model.joblib
+  metadata_path: models/model_metadata.json
+  reports_dir: reports
+
+mlflow:
+  enabled: true
+  # Overridden by the MLFLOW_TRACKING_URI environment variable when it is set.
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: mlops-lab-7-9

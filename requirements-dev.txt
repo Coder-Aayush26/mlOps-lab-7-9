@@ -1,0 +1,5 @@
+# Local development: training + tests + DVC
+-r requirements-train.txt
+pytest==9.2.0
+httpx==0.28.1
+dvc==3.67.1

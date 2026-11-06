@@ -1,0 +1,15 @@
+INFO:     Started server process [94]
+INFO:     Waiting for application startup.
+2026-10-30 19:30:07,486 INFO api Model loaded from models/model.joblib
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58250 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58252 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58258 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58264 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58286 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58288 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58292 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58296 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58298 - "POST /predict HTTP/1.1" 200 OK

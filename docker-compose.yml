@@ -1,0 +1,60 @@
+# Design scaffold for FastAPI + MLflow Tracking Server (single host, SQLite backend).
+# NOT a hardened production config. Verify the MLflow tag/flags against the current docs:
+#   https://mlflow.org/docs/latest/self-hosting/
+#
+#   docker compose config                       # validate
+#   docker compose up --build -d                # api on :8000, mlflow UI on :5000
+#   docker compose run --rm trainer             # retrain INSIDE the stack, logging to http://mlflow:5000
+#   docker compose ps / logs / down             # (down -v also deletes the MLflow volume)
+
+services:
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v3.10.1      # pin a version; change together with requirements-train.txt if you can
+    command: >
+      mlflow server
+      --host 0.0.0.0 --port 5000
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --artifacts-destination /mlflow/artifacts
+      --serve-artifacts
+      --allowed-hosts "mlflow:*,localhost:*,127.0.0.1:*"
+    ports:
+      - "5000:5000"
+    volumes:
+      - mlflow-data:/mlflow                    # persists run metadata (SQLite) + artifacts
+    restart: unless-stopped
+
+  api:
+    build: .
+    image: ml-inference-api:1.0
+    ports:
+      - "8000:8000"
+    environment:
+      MODEL_PATH: /app/models/model.joblib
+      MLFLOW_TRACKING_URI: http://mlflow:5000  # service name resolves on the Compose network
+      LOG_LEVEL: INFO
+    volumes:
+      - ./models:/app/models:ro                # swap in a retrained model without rebuilding
+    depends_on:
+      - mlflow
+    restart: unless-stopped
+
+  trainer:                                      # optional one-shot job: docker compose run --rm trainer
+    build:
+      context: .
+      args:
+        REQUIREMENTS_FILE: requirements-train.txt
+    image: ml-trainer:1.0
+    profiles: ["train"]
+    command: ["python", "-m", "src.train", "--config", "configs/config.yaml"]
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+    volumes:
+      - ./data:/app/data                        # raw data in, processed splits out
+      - ./models:/app/models                    # trained model out (read by the api service)
+      - ./reports:/app/reports
+    user: root                                  # bind-mounted host dirs; avoids UID mismatches in a lab setting
+    depends_on:
+      - mlflow
+
+volumes:
+  mlflow-data:

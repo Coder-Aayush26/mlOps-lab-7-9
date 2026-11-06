@@ -1,0 +1,4 @@
+# Training / experiment tracking extras (used by the `trainer` Compose service and local training)
+-r requirements.txt
+matplotlib==3.10.8
+mlflow==3.17.2

@@ -1,0 +1,1511 @@
+
+##### docker compose config
+compose file valid
+
+##### up --build
+ Image ghcr.io/mlflow/mlflow:v3.10.1 Pulling 
+ 7c4494ccb8dc Pulling fs layer 0B
+ 954774345a61 Pulling fs layer 0B
+ ccaf924377f9 Pulling fs layer 0B
+ 5e584f8f28c3 Pulling fs layer 0B
+ 7360b233c860 Pulling fs layer 0B
+ a1bcdb5fbff9 Download complete 0B
+failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:7c4494ccb8dc0f1702bd8a02c61e7abc72fba3a5e8143058c0cb59224434bffd?se=2026-11-06T13%3A55%3A00Z&sig=W%2FhpwV1lm8Mio0KKw6jj3iOm72pUhbtMJtvzLAN46%2Fk%3D&ske=2026-11-06T20%3A59%3A29Z&skoid=fb3d2a07-ec6c-4fe4-aced-9efe0fd2fe1a&sks=b&skt=2026-11-05T20%3A59%3A29Z&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skv=2025-01-05&sp=r&spr=https&sr=b&sv=2025-01-05&hmac=133ed4cc346db5e9b25636013e4a50a896b8b7ae49b5fc1abf8508ed0cd56658": remote error: tls: error decoding message
+
+##### compose ps
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+
+##### API -> MLflow connectivity
+Expecting value: line 1 column 1 (char 0)
+
+##### Retrain inside the stack (logs run to http://mlflow:5000)
+ Image ghcr.io/mlflow/mlflow:v3.10.1 Pulling 
+ 7c4494ccb8dc Pulling fs layer 0B
+ 5e584f8f28c3 Pulling fs layer 0B
+ 954774345a61 Pulling fs layer 0B
+ ccaf924377f9 Pulling fs layer 0B
+ 7360b233c860 Pulling fs layer 0B
+ a1bcdb5fbff9 Downloading 15.84kB
+ a1bcdb5fbff9 Download complete 0B
+ 7360b233c860 Download complete 0B
+ 954774345a61 Downloading 1.049MB
+ 954774345a61 Downloading 1.049MB
+ 954774345a61 Downloading 1.049MB
+ 954774345a61 Downloading 1.049MB
+ 5e584f8f28c3 Download complete 0B
+ 954774345a61 Downloading 2.097MB
+ 954774345a61 Downloading 2.097MB
+ 954774345a61 Downloading 2.097MB
+ 954774345a61 Downloading 2.097MB
+ 954774345a61 Downloading 3.146MB
+ 954774345a61 Downloading 3.146MB
+ ccaf924377f9 Downloading 1.049MB
+ 954774345a61 Downloading 3.146MB
+ ccaf924377f9 Downloading 1.049MB
+ 954774345a61 Downloading 3.146MB
+ ccaf924377f9 Downloading 1.049MB
+ 954774345a61 Downloading 5.243MB
+ ccaf924377f9 Downloading 1.049MB
+ ccaf924377f9 Downloading 2.097MB
+ 954774345a61 Downloading 5.243MB
+ 954774345a61 Downloading 5.243MB
+ ccaf924377f9 Downloading 2.097MB
+ 954774345a61 Downloading 6.291MB
+ ccaf924377f9 Downloading 2.097MB
+ 954774345a61 Downloading 6.291MB
+ ccaf924377f9 Downloading 2.097MB
+ ccaf924377f9 Downloading 2.097MB
+ 954774345a61 Downloading 6.291MB
+ 954774345a61 Downloading 6.291MB
+ ccaf924377f9 Downloading 2.097MB
+ ccaf924377f9 Downloading 2.097MB
+ 954774345a61 Downloading 6.291MB
+ 954774345a61 Downloading 6.291MB
+ ccaf924377f9 Downloading 2.097MB
+ 954774345a61 Downloading 7.34MB
+ ccaf924377f9 Downloading 3.146MB
+ 954774345a61 Downloading 7.34MB
+ ccaf924377f9 Downloading 3.146MB
+ 954774345a61 Downloading 7.34MB
+ ccaf924377f9 Downloading 3.146MB
+ 954774345a61 Downloading 7.34MB
+ ccaf924377f9 Downloading 3.146MB
+ 954774345a61 Downloading 7.34MB
+ ccaf924377f9 Downloading 3.146MB
+ 954774345a61 Downloading 8.389MB
+ ccaf924377f9 Downloading 3.146MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 8.389MB
+ ccaf924377f9 Downloading 3.146MB
+ 954774345a61 Downloading 8.389MB
+ ccaf924377f9 Downloading 3.146MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 8.389MB
+ ccaf924377f9 Downloading 4.194MB
+ 954774345a61 Downloading 8.389MB
+ ccaf924377f9 Downloading 4.194MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 8.389MB
+ ccaf924377f9 Downloading 4.194MB
+ ccaf924377f9 Downloading 4.194MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 9.437MB
+ ccaf924377f9 Downloading 4.194MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 9.437MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 9.437MB
+ ccaf924377f9 Downloading 5.243MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 9.437MB
+ ccaf924377f9 Downloading 5.243MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 9.437MB
+ ccaf924377f9 Downloading 5.243MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 9.437MB
+ ccaf924377f9 Downloading 5.243MB
+ 954774345a61 Downloading 10.49MB
+ ccaf924377f9 Downloading 5.243MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 10.49MB
+ ccaf924377f9 Downloading 5.243MB
+ 7c4494ccb8dc Downloading 1.049MB
+ 954774345a61 Downloading 10.49MB
+ ccaf924377f9 Downloading 5.243MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 954774345a61 Downloading 10.49MB
+ ccaf924377f9 Downloading 6.291MB
+ 954774345a61 Downloading 11.53MB
+ ccaf924377f9 Downloading 6.291MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 954774345a61 Downloading 11.53MB
+ ccaf924377f9 Downloading 6.291MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 954774345a61 Downloading 11.53MB
+ ccaf924377f9 Downloading 6.291MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 954774345a61 Downloading 12.58MB
+ ccaf924377f9 Downloading 7.34MB
+ 954774345a61 Downloading 12.58MB
+ ccaf924377f9 Downloading 7.34MB
+ 7c4494ccb8dc Downloading 2.097MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 954774345a61 Downloading 12.58MB
+ ccaf924377f9 Downloading 7.34MB
+ 954774345a61 Downloading 12.58MB
+ ccaf924377f9 Downloading 7.34MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 954774345a61 Downloading 13.63MB
+ ccaf924377f9 Downloading 7.34MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 954774345a61 Downloading 13.63MB
+ ccaf924377f9 Downloading 7.34MB
+ 954774345a61 Downloading 13.63MB
+ ccaf924377f9 Downloading 7.34MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 954774345a61 Downloading 13.63MB
+ ccaf924377f9 Downloading 8.389MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 954774345a61 Downloading 13.63MB
+ ccaf924377f9 Downloading 8.389MB
+ 954774345a61 Downloading 14.68MB
+ ccaf924377f9 Downloading 8.389MB
+ 7c4494ccb8dc Downloading 3.146MB
+ 954774345a61 Download complete 0B
+ ccaf924377f9 Downloading 8.389MB
+ 7c4494ccb8dc Downloading 4.194MB
+ 7c4494ccb8dc Downloading 4.194MB
+ ccaf924377f9 Downloading 8.389MB
+ 7c4494ccb8dc Downloading 4.194MB
+ ccaf924377f9 Downloading 8.389MB
+ 7c4494ccb8dc Downloading 4.194MB
+ ccaf924377f9 Downloading 9.437MB
+ 7c4494ccb8dc Downloading 5.243MB
+ ccaf924377f9 Downloading 9.437MB
+ ccaf924377f9 Downloading 9.437MB
+ 7c4494ccb8dc Downloading 5.243MB
+ ccaf924377f9 Downloading 9.437MB
+ 7c4494ccb8dc Downloading 5.243MB
+ ccaf924377f9 Downloading 9.437MB
+ 7c4494ccb8dc Downloading 5.243MB
+ 7c4494ccb8dc Downloading 6.291MB
+ ccaf924377f9 Downloading 10.49MB
+ 7c4494ccb8dc Downloading 6.291MB
+ ccaf924377f9 Downloading 10.49MB
+ ccaf924377f9 Downloading 10.49MB
+ 7c4494ccb8dc Downloading 6.291MB
+ ccaf924377f9 Downloading 10.49MB
+ 7c4494ccb8dc Downloading 6.291MB
+ 7c4494ccb8dc Downloading 7.34MB
+ ccaf924377f9 Downloading 10.49MB
+ ccaf924377f9 Downloading 10.49MB
+ 7c4494ccb8dc Downloading 7.34MB
+ 7c4494ccb8dc Downloading 7.34MB
+ ccaf924377f9 Downloading 11.53MB
+ 7c4494ccb8dc Downloading 7.34MB
+ ccaf924377f9 Downloading 11.53MB
+ 7c4494ccb8dc Downloading 8.389MB
+ ccaf924377f9 Downloading 11.53MB
+ ccaf924377f9 Downloading 11.53MB
+ 7c4494ccb8dc Downloading 8.389MB
+ ccaf924377f9 Downloading 11.53MB
+ 7c4494ccb8dc Downloading 8.389MB
+ 7c4494ccb8dc Downloading 8.389MB
+ ccaf924377f9 Downloading 12.58MB
+ ccaf924377f9 Downloading 12.58MB
+ 7c4494ccb8dc Downloading 9.437MB
+ 7c4494ccb8dc Downloading 9.437MB
+ ccaf924377f9 Downloading 12.58MB
+ 7c4494ccb8dc Downloading 9.437MB
+ ccaf924377f9 Downloading 12.58MB
+ 7c4494ccb8dc Downloading 10.49MB
+ ccaf924377f9 Downloading 12.58MB
+ 7c4494ccb8dc Downloading 10.49MB
+ ccaf924377f9 Downloading 12.58MB
+ 7c4494ccb8dc Downloading 11.53MB
+ ccaf924377f9 Downloading 12.58MB
+ 7c4494ccb8dc Downloading 11.53MB
+ ccaf924377f9 Downloading 13.63MB
+ ccaf924377f9 Downloading 13.63MB
+ 7c4494ccb8dc Downloading 11.53MB
+ 7c4494ccb8dc Downloading 11.53MB
+ ccaf924377f9 Downloading 13.63MB
+ ccaf924377f9 Downloading 13.63MB
+ 7c4494ccb8dc Downloading 11.53MB
+ ccaf924377f9 Downloading 13.63MB
+ 7c4494ccb8dc Downloading 12.58MB
+ 7c4494ccb8dc Downloading 12.58MB
+ ccaf924377f9 Downloading 14.68MB
+ ccaf924377f9 Downloading 14.68MB
+ 7c4494ccb8dc Downloading 12.58MB
+ 7c4494ccb8dc Downloading 13.63MB
+ ccaf924377f9 Downloading 14.68MB
+ ccaf924377f9 Downloading 14.68MB
+ 7c4494ccb8dc Downloading 13.63MB
+ ccaf924377f9 Downloading 14.68MB
+ 7c4494ccb8dc Downloading 13.63MB
+ 7c4494ccb8dc Downloading 13.63MB
+ ccaf924377f9 Downloading 14.68MB
+ 7c4494ccb8dc Downloading 13.63MB
+ ccaf924377f9 Downloading 14.68MB
+ 7c4494ccb8dc Downloading 14.68MB
+ ccaf924377f9 Downloading 15.73MB
+ ccaf924377f9 Downloading 15.73MB
+ 7c4494ccb8dc Downloading 14.68MB
+ ccaf924377f9 Downloading 15.73MB
+ 7c4494ccb8dc Downloading 14.68MB
+ 7c4494ccb8dc Downloading 14.68MB
+ ccaf924377f9 Downloading 15.73MB
+ 7c4494ccb8dc Downloading 14.68MB
+ ccaf924377f9 Downloading 15.73MB
+ 7c4494ccb8dc Downloading 15.73MB
+ ccaf924377f9 Downloading 15.73MB
+ 7c4494ccb8dc Downloading 15.73MB
+ ccaf924377f9 Downloading 15.73MB
+ 7c4494ccb8dc Downloading 15.73MB
+ ccaf924377f9 Downloading 15.73MB
+ ccaf924377f9 Downloading 16.78MB
+ 7c4494ccb8dc Downloading 15.73MB
+ ccaf924377f9 Downloading 16.78MB
+ 7c4494ccb8dc Downloading 16.78MB
+ ccaf924377f9 Downloading 16.78MB
+ 7c4494ccb8dc Downloading 16.78MB
+ 7c4494ccb8dc Downloading 16.78MB
+ ccaf924377f9 Downloading 16.78MB
+ ccaf924377f9 Downloading 16.78MB
+ 7c4494ccb8dc Downloading 16.78MB
+ 7c4494ccb8dc Downloading 17.83MB
+ ccaf924377f9 Downloading 17.83MB
+ ccaf924377f9 Downloading 17.83MB
+ 7c4494ccb8dc Downloading 17.83MB
+ 7c4494ccb8dc Downloading 17.83MB
+ ccaf924377f9 Downloading 17.83MB
+ 7c4494ccb8dc Downloading 17.83MB
+ ccaf924377f9 Downloading 17.83MB
+ ccaf924377f9 Downloading 17.83MB
+ 7c4494ccb8dc Downloading 17.83MB
+ ccaf924377f9 Downloading 18.87MB
+ 7c4494ccb8dc Downloading 18.87MB
+ ccaf924377f9 Downloading 19.92MB
+ 7c4494ccb8dc Downloading 19.92MB
+ ccaf924377f9 Downloading 19.92MB
+ 7c4494ccb8dc Downloading 19.92MB
+ ccaf924377f9 Downloading 19.92MB
+ 7c4494ccb8dc Downloading 19.92MB
+ 7c4494ccb8dc Downloading 20.97MB
+ ccaf924377f9 Downloading 19.92MB
+ 7c4494ccb8dc Downloading 20.97MB
+ ccaf924377f9 Downloading 20.97MB
+ ccaf924377f9 Downloading 20.97MB
+ 7c4494ccb8dc Downloading 20.97MB
+ 7c4494ccb8dc Downloading 20.97MB
+ ccaf924377f9 Downloading 20.97MB
+ 7c4494ccb8dc Downloading 22.02MB
+ ccaf924377f9 Downloading 20.97MB
+ 7c4494ccb8dc Downloading 22.02MB
+ ccaf924377f9 Downloading 20.97MB
+ 7c4494ccb8dc Downloading 22.02MB
+ ccaf924377f9 Downloading 20.97MB
+ ccaf924377f9 Downloading 22.02MB
+ 7c4494ccb8dc Downloading 22.02MB
+ 7c4494ccb8dc Downloading 23.07MB
+ ccaf924377f9 Downloading 22.02MB
+ ccaf924377f9 Downloading 22.02MB
+ 7c4494ccb8dc Downloading 23.07MB
+ ccaf924377f9 Downloading 22.02MB
+ 7c4494ccb8dc Downloading 23.07MB
+ ccaf924377f9 Downloading 22.02MB
+ 7c4494ccb8dc Downloading 23.07MB
+ 7c4494ccb8dc Downloading 24.12MB
+ ccaf924377f9 Downloading 23.07MB
+ 7c4494ccb8dc Downloading 24.12MB
+ ccaf924377f9 Downloading 23.07MB
+ 7c4494ccb8dc Downloading 24.12MB
+ ccaf924377f9 Downloading 23.07MB
+ 7c4494ccb8dc Downloading 24.12MB
+ ccaf924377f9 Downloading 23.07MB
+ ccaf924377f9 Downloading 23.07MB
+ 7c4494ccb8dc Downloading 24.12MB
+ 7c4494ccb8dc Downloading 24.12MB
+ ccaf924377f9 Downloading 24.12MB
+ 7c4494ccb8dc Downloading 25.17MB
+ ccaf924377f9 Downloading 24.12MB
+ 7c4494ccb8dc Downloading 25.17MB
+ ccaf924377f9 Downloading 24.12MB
+ 7c4494ccb8dc Downloading 25.17MB
+ ccaf924377f9 Downloading 24.12MB
+ 7c4494ccb8dc Downloading 25.17MB
+ ccaf924377f9 Downloading 25.17MB
+ 7c4494ccb8dc Downloading 26.21MB
+ ccaf924377f9 Downloading 25.17MB
+ ccaf924377f9 Downloading 25.17MB
+ 7c4494ccb8dc Downloading 26.21MB
+ ccaf924377f9 Downloading 26.21MB
+ 7c4494ccb8dc Downloading 27.26MB
+ 7c4494ccb8dc Downloading 27.26MB
+ ccaf924377f9 Downloading 26.21MB
+ 7c4494ccb8dc Downloading 27.26MB
+ ccaf924377f9 Downloading 26.21MB
+ ccaf924377f9 Downloading 26.21MB
+ 7c4494ccb8dc Downloading 27.26MB
+ 7c4494ccb8dc Downloading 27.26MB
+ ccaf924377f9 Downloading 26.21MB
+ 7c4494ccb8dc Downloading 28.31MB
+ ccaf924377f9 Downloading 27.26MB
+ 7c4494ccb8dc Downloading 28.31MB
+ ccaf924377f9 Downloading 27.26MB
+ ccaf924377f9 Downloading 27.26MB
+ 7c4494ccb8dc Downloading 28.31MB
+ ccaf924377f9 Downloading 27.26MB
+ 7c4494ccb8dc Downloading 28.31MB
+ 7c4494ccb8dc Downloading 29.36MB
+ ccaf924377f9 Downloading 27.26MB
+ ccaf924377f9 Downloading 28.31MB
+ 7c4494ccb8dc Downloading 29.36MB
+ 7c4494ccb8dc Downloading 29.36MB
+ ccaf924377f9 Downloading 28.31MB
+ ccaf924377f9 Downloading 28.31MB
+ 7c4494ccb8dc Downloading 29.36MB
+ 7c4494ccb8dc Downloading 29.36MB
+ ccaf924377f9 Downloading 29.36MB
+ 7c4494ccb8dc Downloading 30.41MB
+ ccaf924377f9 Downloading 29.36MB
+ ccaf924377f9 Downloading 29.36MB
+ 7c4494ccb8dc Downloading 30.41MB
+ 7c4494ccb8dc Downloading 30.41MB
+ ccaf924377f9 Downloading 29.36MB
+ 7c4494ccb8dc Downloading 30.41MB
+ ccaf924377f9 Downloading 29.36MB
+ ccaf924377f9 Downloading 30.26MB
+ 7c4494ccb8dc Downloading 31.46MB
+ ccaf924377f9 Download complete 0B
+ 7c4494ccb8dc Downloading 31.46MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 32.51MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 32.51MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 33.55MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 33.55MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 34.6MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 34.6MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 35.65MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 35.65MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 36.7MB
+ ccaf924377f9 Extracting 1B
+ 7c4494ccb8dc Downloading 36.7MB
+ ccaf924377f9 Extracting 2B
+ 7c4494ccb8dc Downloading 37.75MB
+ ccaf924377f9 Extracting 2B
+ 7c4494ccb8dc Downloading 37.75MB
+ ccaf924377f9 Extracting 2B
+ 7c4494ccb8dc Downloading 38.8MB
+ ccaf924377f9 Extracting 2B
+ 7c4494ccb8dc Downloading 38.8MB
+ 5e584f8f28c3 Extracting 1B
+ ccaf924377f9 Pull complete 0B
+ 7c4494ccb8dc Downloading 39.85MB
+ 5e584f8f28c3 Pull complete 0B
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 39.85MB
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 40.89MB
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 40.89MB
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 41.94MB
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 41.94MB
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 41.94MB
+ 954774345a61 Extracting 1B
+ 7c4494ccb8dc Downloading 42.99MB
+ 954774345a61 Pull complete 0B
+ 7c4494ccb8dc Downloading 42.99MB
+ 7360b233c860 Pull complete 0B
+ 7c4494ccb8dc Downloading 44.04MB
+ 7c4494ccb8dc Downloading 44.04MB
+ 7c4494ccb8dc Downloading 44.04MB
+ 7c4494ccb8dc Downloading 45.09MB
+ 7c4494ccb8dc Downloading 45.09MB
+ 7c4494ccb8dc Downloading 45.09MB
+ 7c4494ccb8dc Downloading 45.09MB
+ 7c4494ccb8dc Downloading 46.14MB
+ 7c4494ccb8dc Downloading 46.14MB
+ 7c4494ccb8dc Downloading 46.14MB
+ 7c4494ccb8dc Downloading 46.14MB
+ 7c4494ccb8dc Downloading 47.19MB
+ 7c4494ccb8dc Downloading 47.19MB
+ 7c4494ccb8dc Downloading 47.19MB
+ 7c4494ccb8dc Downloading 48.23MB
+ 7c4494ccb8dc Downloading 48.23MB
+ 7c4494ccb8dc Downloading 48.23MB
+ 7c4494ccb8dc Downloading 49.28MB
+ 7c4494ccb8dc Downloading 49.28MB
+ 7c4494ccb8dc Downloading 50.33MB
+ 7c4494ccb8dc Downloading 50.33MB
+ 7c4494ccb8dc Downloading 50.33MB
+ 7c4494ccb8dc Downloading 51.38MB
+ 7c4494ccb8dc Downloading 51.38MB
+ 7c4494ccb8dc Downloading 51.38MB
+ 7c4494ccb8dc Downloading 51.38MB
+ 7c4494ccb8dc Downloading 52.43MB
+ 7c4494ccb8dc Downloading 53.48MB
+ 7c4494ccb8dc Downloading 53.48MB
+ 7c4494ccb8dc Downloading 54.53MB
+ 7c4494ccb8dc Downloading 54.53MB
+ 7c4494ccb8dc Downloading 54.53MB
+ 7c4494ccb8dc Downloading 55.57MB
+ 7c4494ccb8dc Downloading 55.57MB
+ 7c4494ccb8dc Downloading 55.57MB
+ 7c4494ccb8dc Downloading 56.62MB
+ 7c4494ccb8dc Downloading 56.62MB
+ 7c4494ccb8dc Downloading 57.67MB
+ 7c4494ccb8dc Downloading 57.67MB
+ 7c4494ccb8dc Downloading 57.67MB
+ 7c4494ccb8dc Downloading 58.72MB
+ 7c4494ccb8dc Downloading 58.72MB
+ 7c4494ccb8dc Downloading 58.72MB
+ 7c4494ccb8dc Downloading 59.77MB
+ 7c4494ccb8dc Downloading 59.77MB
+ 7c4494ccb8dc Downloading 60.82MB
+ 7c4494ccb8dc Downloading 60.82MB
+ 7c4494ccb8dc Downloading 61.87MB
+ 7c4494ccb8dc Downloading 61.87MB
+ 7c4494ccb8dc Downloading 61.87MB
+ 7c4494ccb8dc Downloading 62.91MB
+ 7c4494ccb8dc Downloading 62.91MB
+ 7c4494ccb8dc Downloading 63.96MB
+ 7c4494ccb8dc Downloading 63.96MB
+ 7c4494ccb8dc Downloading 63.96MB
+ 7c4494ccb8dc Downloading 63.96MB
+ 7c4494ccb8dc Downloading 65.01MB
+ 7c4494ccb8dc Downloading 65.01MB
+ 7c4494ccb8dc Downloading 65.01MB
+ 7c4494ccb8dc Downloading 66.06MB
+ 7c4494ccb8dc Downloading 66.06MB
+ 7c4494ccb8dc Downloading 67.11MB
+ 7c4494ccb8dc Downloading 68.16MB
+ 7c4494ccb8dc Downloading 68.16MB
+ 7c4494ccb8dc Downloading 69.21MB
+ 7c4494ccb8dc Downloading 69.21MB
+ 7c4494ccb8dc Downloading 69.21MB
+ 7c4494ccb8dc Downloading 70.25MB
+ 7c4494ccb8dc Downloading 70.25MB
+ 7c4494ccb8dc Downloading 70.25MB
+ 7c4494ccb8dc Downloading 70.25MB
+ 7c4494ccb8dc Downloading 70.25MB
+ 7c4494ccb8dc Downloading 71.3MB
+ 7c4494ccb8dc Downloading 72.35MB
+ 7c4494ccb8dc Downloading 73.4MB
+ 7c4494ccb8dc Downloading 73.4MB
+ 7c4494ccb8dc Downloading 73.4MB
+ 7c4494ccb8dc Downloading 74.45MB
+ 7c4494ccb8dc Downloading 74.45MB
+ 7c4494ccb8dc Downloading 74.45MB
+ 7c4494ccb8dc Downloading 75.5MB
+ 7c4494ccb8dc Downloading 75.5MB
+ 7c4494ccb8dc Downloading 75.5MB
+ 7c4494ccb8dc Downloading 76.55MB
+ 7c4494ccb8dc Downloading 76.55MB
+ 7c4494ccb8dc Downloading 76.55MB
+ 7c4494ccb8dc Downloading 77.59MB
+ 7c4494ccb8dc Downloading 78.64MB
+ 7c4494ccb8dc Downloading 78.64MB
+ 7c4494ccb8dc Downloading 78.64MB
+ 7c4494ccb8dc Downloading 78.64MB
+ 7c4494ccb8dc Downloading 79.69MB
+ 7c4494ccb8dc Downloading 79.69MB
+ 7c4494ccb8dc Downloading 80.74MB
+ 7c4494ccb8dc Downloading 80.74MB
+ 7c4494ccb8dc Downloading 81.79MB
+ 7c4494ccb8dc Downloading 81.79MB
+ 7c4494ccb8dc Downloading 82.84MB
+ 7c4494ccb8dc Downloading 83.89MB
+ 7c4494ccb8dc Downloading 83.89MB
+ 7c4494ccb8dc Downloading 83.89MB
+ 7c4494ccb8dc Downloading 83.89MB
+ 7c4494ccb8dc Downloading 84.93MB
+ 7c4494ccb8dc Downloading 84.93MB
+ 7c4494ccb8dc Downloading 84.93MB
+ 7c4494ccb8dc Downloading 85.98MB
+ 7c4494ccb8dc Downloading 85.98MB
+ 7c4494ccb8dc Downloading 87.03MB
+ 7c4494ccb8dc Downloading 87.03MB
+ 7c4494ccb8dc Downloading 87.03MB
+ 7c4494ccb8dc Downloading 88.08MB
+ 7c4494ccb8dc Downloading 88.08MB
+ 7c4494ccb8dc Downloading 88.08MB
+ 7c4494ccb8dc Downloading 89.13MB
+ 7c4494ccb8dc Downloading 89.13MB
+ 7c4494ccb8dc Downloading 89.13MB
+ 7c4494ccb8dc Downloading 90.18MB
+ 7c4494ccb8dc Downloading 90.18MB
+ 7c4494ccb8dc Downloading 91.23MB
+ 7c4494ccb8dc Downloading 91.23MB
+ 7c4494ccb8dc Downloading 92.27MB
+ 7c4494ccb8dc Downloading 92.27MB
+ 7c4494ccb8dc Downloading 92.27MB
+ 7c4494ccb8dc Downloading 93.32MB
+ 7c4494ccb8dc Downloading 93.32MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 94.37MB
+ 7c4494ccb8dc Downloading 95.42MB
+ 7c4494ccb8dc Downloading 95.42MB
+ 7c4494ccb8dc Downloading 95.42MB
+ 7c4494ccb8dc Downloading 96.47MB
+ 7c4494ccb8dc Downloading 96.47MB
+ 7c4494ccb8dc Downloading 97.52MB
+ 7c4494ccb8dc Downloading 97.52MB
+ 7c4494ccb8dc Downloading 97.52MB
+ 7c4494ccb8dc Downloading 98.57MB
+ 7c4494ccb8dc Downloading 98.57MB
+ 7c4494ccb8dc Downloading 98.57MB
+ 7c4494ccb8dc Downloading 99.61MB
+ 7c4494ccb8dc Downloading 100.7MB
+ 7c4494ccb8dc Downloading 100.7MB
+ 7c4494ccb8dc Downloading 100.7MB
+ 7c4494ccb8dc Downloading 101.7MB
+ 7c4494ccb8dc Downloading 101.7MB
+ 7c4494ccb8dc Downloading 101.7MB
+ 7c4494ccb8dc Downloading 102.8MB
+ 7c4494ccb8dc Downloading 102.8MB
+ 7c4494ccb8dc Downloading 103.8MB
+ 7c4494ccb8dc Downloading 103.8MB
+ 7c4494ccb8dc Downloading 104.9MB
+ 7c4494ccb8dc Downloading 104.9MB
+ 7c4494ccb8dc Downloading 104.9MB
+ 7c4494ccb8dc Downloading 104.9MB
+ 7c4494ccb8dc Downloading 105.9MB
+ 7c4494ccb8dc Downloading 107MB
+ 7c4494ccb8dc Downloading 107MB
+ 7c4494ccb8dc Downloading 108MB
+ 7c4494ccb8dc Downloading 108MB
+ 7c4494ccb8dc Downloading 109.1MB
+ 7c4494ccb8dc Downloading 109.1MB
+ 7c4494ccb8dc Downloading 110.1MB
+ 7c4494ccb8dc Downloading 110.1MB
+ 7c4494ccb8dc Downloading 110.1MB
+ 7c4494ccb8dc Downloading 111.1MB
+ 7c4494ccb8dc Downloading 111.1MB
+ 7c4494ccb8dc Downloading 112.2MB
+ 7c4494ccb8dc Downloading 112.2MB
+ 7c4494ccb8dc Downloading 113.2MB
+ 7c4494ccb8dc Downloading 113.2MB
+ 7c4494ccb8dc Downloading 114.3MB
+ 7c4494ccb8dc Downloading 114.3MB
+ 7c4494ccb8dc Downloading 114.3MB
+ 7c4494ccb8dc Downloading 115.3MB
+ 7c4494ccb8dc Downloading 115.3MB
+ 7c4494ccb8dc Downloading 115.3MB
+ 7c4494ccb8dc Downloading 116.4MB
+ 7c4494ccb8dc Downloading 116.4MB
+ 7c4494ccb8dc Downloading 116.4MB
+ 7c4494ccb8dc Downloading 116.4MB
+ 7c4494ccb8dc Downloading 117.4MB
+ 7c4494ccb8dc Downloading 117.4MB
+ 7c4494ccb8dc Downloading 118.5MB
+ 7c4494ccb8dc Downloading 118.5MB
+ 7c4494ccb8dc Downloading 119.5MB
+ 7c4494ccb8dc Downloading 120.6MB
+ 7c4494ccb8dc Downloading 120.6MB
+ 7c4494ccb8dc Downloading 121.6MB
+ 7c4494ccb8dc Downloading 121.6MB
+ 7c4494ccb8dc Downloading 122.7MB
+ 7c4494ccb8dc Downloading 122.7MB
+ 7c4494ccb8dc Downloading 122.7MB
+ 7c4494ccb8dc Downloading 123.7MB
+ 7c4494ccb8dc Downloading 124.8MB
+ 7c4494ccb8dc Downloading 124.8MB
+ 7c4494ccb8dc Downloading 125.8MB
+ 7c4494ccb8dc Downloading 125.8MB
+ 7c4494ccb8dc Downloading 125.8MB
+ 7c4494ccb8dc Downloading 125.8MB
+ 7c4494ccb8dc Downloading 126.9MB
+ 7c4494ccb8dc Downloading 126.9MB
+ 7c4494ccb8dc Downloading 126.9MB
+ 7c4494ccb8dc Downloading 127.9MB
+ 7c4494ccb8dc Downloading 127.9MB
+ 7c4494ccb8dc Downloading 129MB
+ 7c4494ccb8dc Downloading 129MB
+ 7c4494ccb8dc Downloading 129MB
+ 7c4494ccb8dc Downloading 130MB
+ 7c4494ccb8dc Downloading 130MB
+ 7c4494ccb8dc Downloading 131.1MB
+ 7c4494ccb8dc Downloading 131.1MB
+ 7c4494ccb8dc Downloading 131.1MB
+ 7c4494ccb8dc Downloading 132.1MB
+ 7c4494ccb8dc Downloading 132.1MB
+ 7c4494ccb8dc Downloading 132.1MB
+ 7c4494ccb8dc Downloading 133.2MB
+ 7c4494ccb8dc Downloading 133.2MB
+ 7c4494ccb8dc Downloading 135.3MB
+ 7c4494ccb8dc Downloading 135.3MB
+ 7c4494ccb8dc Downloading 135.3MB
+ 7c4494ccb8dc Downloading 135.3MB
+ 7c4494ccb8dc Downloading 136.3MB
+ 7c4494ccb8dc Downloading 136.3MB
+ 7c4494ccb8dc Downloading 136.3MB
+ 7c4494ccb8dc Downloading 136.3MB
+ 7c4494ccb8dc Downloading 137.4MB
+ 7c4494ccb8dc Downloading 137.4MB
+ 7c4494ccb8dc Downloading 138.4MB
+ 7c4494ccb8dc Downloading 138.4MB
+ 7c4494ccb8dc Downloading 138.4MB
+ 7c4494ccb8dc Downloading 139.5MB
+ 7c4494ccb8dc Downloading 140.5MB
+ 7c4494ccb8dc Downloading 140.5MB
+ 7c4494ccb8dc Downloading 140.5MB
+ 7c4494ccb8dc Downloading 141.6MB
+ 7c4494ccb8dc Downloading 141.6MB
+ 7c4494ccb8dc Downloading 142.6MB
+ 7c4494ccb8dc Downloading 142.6MB
+ 7c4494ccb8dc Downloading 142.6MB
+ 7c4494ccb8dc Downloading 143.7MB
+ 7c4494ccb8dc Downloading 143.7MB
+ 7c4494ccb8dc Downloading 143.7MB
+ 7c4494ccb8dc Downloading 144.7MB
+ 7c4494ccb8dc Downloading 144.7MB
+ 7c4494ccb8dc Downloading 146.8MB
+ 7c4494ccb8dc Downloading 146.8MB
+ 7c4494ccb8dc Downloading 146.8MB
+ 7c4494ccb8dc Downloading 146.8MB
+ 7c4494ccb8dc Downloading 147.8MB
+ 7c4494ccb8dc Downloading 147.8MB
+ 7c4494ccb8dc Downloading 148.9MB
+ 7c4494ccb8dc Downloading 149.9MB
+ 7c4494ccb8dc Downloading 149.9MB
+ 7c4494ccb8dc Downloading 149.9MB
+ 7c4494ccb8dc Downloading 151MB
+ 7c4494ccb8dc Downloading 151MB
+ 7c4494ccb8dc Downloading 151MB
+ 7c4494ccb8dc Downloading 152MB
+ 7c4494ccb8dc Downloading 152MB
+ 7c4494ccb8dc Downloading 153.1MB
+ 7c4494ccb8dc Downloading 154.1MB
+ 7c4494ccb8dc Downloading 154.1MB
+ 7c4494ccb8dc Downloading 154.1MB
+ 7c4494ccb8dc Downloading 154.1MB
+ 7c4494ccb8dc Downloading 155.2MB
+ 7c4494ccb8dc Downloading 155.2MB
+ 7c4494ccb8dc Downloading 156.2MB
+ 7c4494ccb8dc Downloading 156.2MB
+ 7c4494ccb8dc Downloading 156.2MB
+ 7c4494ccb8dc Downloading 157.3MB
+ 7c4494ccb8dc Downloading 158.3MB
+ 7c4494ccb8dc Downloading 158.3MB
+ 7c4494ccb8dc Downloading 158.3MB
+ 7c4494ccb8dc Downloading 158.3MB
+ 7c4494ccb8dc Downloading 159.4MB
+ 7c4494ccb8dc Downloading 159.4MB
+ 7c4494ccb8dc Downloading 160.4MB
+ 7c4494ccb8dc Downloading 160.4MB
+ 7c4494ccb8dc Downloading 160.4MB
+ 7c4494ccb8dc Downloading 160.4MB
+ 7c4494ccb8dc Downloading 161.5MB
+ 7c4494ccb8dc Downloading 161.5MB
+ 7c4494ccb8dc Downloading 161.5MB
+ 7c4494ccb8dc Downloading 162.5MB
+ 7c4494ccb8dc Downloading 163.6MB
+ 7c4494ccb8dc Downloading 163.6MB
+ 7c4494ccb8dc Downloading 164.6MB
+ 7c4494ccb8dc Downloading 164.6MB
+ 7c4494ccb8dc Downloading 164.6MB
+ 7c4494ccb8dc Downloading 164.6MB
+ 7c4494ccb8dc Downloading 164.6MB
+ 7c4494ccb8dc Downloading 164.6MB
+ 7c4494ccb8dc Downloading 165.7MB
+ 7c4494ccb8dc Downloading 165.7MB
+ 7c4494ccb8dc Downloading 165.7MB
+ 7c4494ccb8dc Downloading 166.7MB
+ 7c4494ccb8dc Downloading 166.7MB
+ 7c4494ccb8dc Downloading 167.8MB
+ 7c4494ccb8dc Downloading 167.8MB
+ 7c4494ccb8dc Downloading 168.8MB
+ 7c4494ccb8dc Downloading 168.8MB
+ 7c4494ccb8dc Downloading 169.9MB
+ 7c4494ccb8dc Downloading 169.9MB
+ 7c4494ccb8dc Downloading 170.9MB
+ 7c4494ccb8dc Downloading 172MB
+ 7c4494ccb8dc Downloading 172MB
+ 7c4494ccb8dc Downloading 173MB
+ 7c4494ccb8dc Downloading 173MB
+ 7c4494ccb8dc Downloading 173MB
+ 7c4494ccb8dc Downloading 174.1MB
+ 7c4494ccb8dc Downloading 174.1MB
+ 7c4494ccb8dc Downloading 174.1MB
+ 7c4494ccb8dc Downloading 175.1MB
+ 7c4494ccb8dc Downloading 175.1MB
+ 7c4494ccb8dc Downloading 176.2MB
+ 7c4494ccb8dc Downloading 176.2MB
+ 7c4494ccb8dc Downloading 177.2MB
+ 7c4494ccb8dc Downloading 177.2MB
+ 7c4494ccb8dc Downloading 178.3MB
+ 7c4494ccb8dc Downloading 178.3MB
+ 7c4494ccb8dc Downloading 178.3MB
+ 7c4494ccb8dc Downloading 178.3MB
+ 7c4494ccb8dc Downloading 179.3MB
+ 7c4494ccb8dc Downloading 179.3MB
+ 7c4494ccb8dc Downloading 179.3MB
+ 7c4494ccb8dc Downloading 180.4MB
+ 7c4494ccb8dc Downloading 180.4MB
+ 7c4494ccb8dc Downloading 181.4MB
+ 7c4494ccb8dc Downloading 181.4MB
+ 7c4494ccb8dc Downloading 182.5MB
+ 7c4494ccb8dc Downloading 182.5MB
+ 7c4494ccb8dc Downloading 183.5MB
+ 7c4494ccb8dc Downloading 183.5MB
+ 7c4494ccb8dc Downloading 183.5MB
+ 7c4494ccb8dc Downloading 184.5MB
+ 7c4494ccb8dc Downloading 184.5MB
+ 7c4494ccb8dc Downloading 185.6MB
+ 7c4494ccb8dc Downloading 185.6MB
+ 7c4494ccb8dc Downloading 186.6MB
+ 7c4494ccb8dc Downloading 186.6MB
+ 7c4494ccb8dc Downloading 186.6MB
+ 7c4494ccb8dc Downloading 187.7MB
+ 7c4494ccb8dc Downloading 188.7MB
+ 7c4494ccb8dc Downloading 188.7MB
+ 7c4494ccb8dc Downloading 188.7MB
+ 7c4494ccb8dc Downloading 188.7MB
+ 7c4494ccb8dc Downloading 189.8MB
+ 7c4494ccb8dc Downloading 189.8MB
+ 7c4494ccb8dc Downloading 190.8MB
+ 7c4494ccb8dc Downloading 190.8MB
+ 7c4494ccb8dc Downloading 191.9MB
+ 7c4494ccb8dc Downloading 191.9MB
+ 7c4494ccb8dc Downloading 191.9MB
+ 7c4494ccb8dc Downloading 192.9MB
+ 7c4494ccb8dc Downloading 192.9MB
+ 7c4494ccb8dc Downloading 194MB
+ 7c4494ccb8dc Downloading 194MB
+ 7c4494ccb8dc Downloading 195MB
+ 7c4494ccb8dc Downloading 195MB
+ 7c4494ccb8dc Downloading 195MB
+ 7c4494ccb8dc Downloading 196.1MB
+ 7c4494ccb8dc Downloading 196.1MB
+ 7c4494ccb8dc Downloading 197.1MB
+ 7c4494ccb8dc Downloading 197.1MB
+ 7c4494ccb8dc Downloading 198.2MB
+ 7c4494ccb8dc Downloading 198.2MB
+ 7c4494ccb8dc Downloading 199.2MB
+ 7c4494ccb8dc Downloading 199.2MB
+ 7c4494ccb8dc Downloading 200.3MB
+ 7c4494ccb8dc Downloading 200.3MB
+ 7c4494ccb8dc Downloading 200.3MB
+ 7c4494ccb8dc Downloading 201.3MB
+ 7c4494ccb8dc Downloading 201.3MB
+ 7c4494ccb8dc Downloading 202.4MB
+ 7c4494ccb8dc Downloading 202.4MB
+ 7c4494ccb8dc Downloading 203.4MB
+ 7c4494ccb8dc Downloading 203.4MB
+ 7c4494ccb8dc Downloading 203.4MB
+ 7c4494ccb8dc Downloading 204.5MB
+ 7c4494ccb8dc Downloading 204.5MB
+ 7c4494ccb8dc Downloading 204.5MB
+ 7c4494ccb8dc Downloading 205.5MB
+ 7c4494ccb8dc Downloading 205.5MB
+ 7c4494ccb8dc Downloading 205.5MB
+ 7c4494ccb8dc Downloading 206.6MB
+ 7c4494ccb8dc Downloading 206.6MB
+ 7c4494ccb8dc Downloading 206.6MB
+ 7c4494ccb8dc Downloading 206.6MB
+ 7c4494ccb8dc Downloading 207.6MB
+ 7c4494ccb8dc Downloading 207.6MB
+ 7c4494ccb8dc Downloading 207.6MB
+ 7c4494ccb8dc Downloading 208.7MB
+ 7c4494ccb8dc Downloading 208.7MB
+ 7c4494ccb8dc Downloading 209.7MB
+ 7c4494ccb8dc Downloading 209.7MB
+ 7c4494ccb8dc Downloading 210.8MB
+ 7c4494ccb8dc Downloading 210.8MB
+ 7c4494ccb8dc Downloading 211.8MB
+ 7c4494ccb8dc Download complete 0B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 1B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 2B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 3B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 4B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 5B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 6B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 7B
+ 7c4494ccb8dc Extracting 8B
+ 7c4494ccb8dc Extracting 8B
+ 7c4494ccb8dc Extracting 8B
+ 7c4494ccb8dc Extracting 8B
+ 7c4494ccb8dc Extracting 8B
+ 7c4494ccb8dc Pull complete 0B
+ Image ghcr.io/mlflow/mlflow:v3.10.1 Pulled 
+ Volume mlops-lab-7-9_mlflow-data Creating 
+ Network mlops-lab-7-9_default Creating 
+ Volume mlops-lab-7-9_mlflow-data Creating 
+ Network mlops-lab-7-9_default Creating 
+ Volume mlops-lab-7-9_mlflow-data Created 
+ Volume mlops-lab-7-9_mlflow-data Created 
+ Network mlops-lab-7-9_default Created 
+ Network mlops-lab-7-9_default Created 
+ Container mlops-lab-7-9-mlflow-1 Creating 
+ Container mlops-lab-7-9-mlflow-1 Created 
+ Container mlops-lab-7-9-mlflow-1 Starting 
+ Container mlops-lab-7-9-mlflow-1 Started 
+ Image ml-trainer:1.0 Pulling 
+ Image ml-trainer:1.0 failed to resolve reference "docker.io/library/ml-trainer:1.0": failed to authorize: failed to fetch oauth token: Post "https://auth.docker.io/token": remote error: tls: protocol version not supported 
+ Image ml-trainer:1.0 Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 605B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 994B done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.11-slim
+#3 ...
+
+#4 [auth] library/python:pull token for registry-1.docker.io
+#4 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.11-slim
+#3 DONE 1.6s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 207B 0.0s done
+#5 DONE 0.0s
+
+#6 [1/8] FROM docker.io/library/python:3.11-slim@sha256:65bd3d9f1d7fa268dd1909973ba7eb4bdf41f6dcf2cfbe76ba9528b170f3fd79
+#6 resolve docker.io/library/python:3.11-slim@sha256:65bd3d9f1d7fa268dd1909973ba7eb4bdf41f6dcf2cfbe76ba9528b170f3fd79 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 859B done
+#7 DONE 0.0s
+
+#8 [2/8] WORKDIR /app
+#8 CACHED
+
+#9 [3/8] COPY requirements.txt requirements-train.txt ./
+#9 CACHED
+
+#10 [4/8] RUN pip install --no-cache-dir -r requirements-train.txt
+#10 3.404 Collecting numpy==2.4.4 (from -r requirements.txt (line 2))
+#10 3.555   Downloading numpy-2.4.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+#10 4.075 Collecting pandas==3.0.2 (from -r requirements.txt (line 3))
+#10 4.129   Downloading pandas-3.0.2-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (79 kB)
+#10 4.222      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 942.6 kB/s eta 0:00:00
+#10 4.478 Collecting scikit-learn==1.8.0 (from -r requirements.txt (line 4))
+#10 4.509   Downloading scikit_learn-1.8.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (11 kB)
+#10 4.585 Collecting joblib==1.5.3 (from -r requirements.txt (line 5))
+#10 4.616   Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+#10 4.721 Collecting PyYAML==6.0.3 (from -r requirements.txt (line 6))
+#10 4.765   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+#10 4.956 Collecting fastapi==0.162.0 (from -r requirements.txt (line 7))
+#10 4.990   Downloading fastapi-0.162.0-py3-none-any.whl.metadata (26 kB)
+#10 5.138 Collecting uvicorn==0.54.0 (from uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 5.317   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+#10 5.837 Collecting pydantic==2.14.2 (from -r requirements.txt (line 9))
+#10 5.868   Downloading pydantic-2.14.2-py3-none-any.whl.metadata (137 kB)
+#10 5.931      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 137.6/137.6 kB 2.3 MB/s eta 0:00:00
+#10 6.387 Collecting matplotlib==3.10.8 (from -r requirements-train.txt (line 3))
+#10 6.635   Downloading matplotlib-3.10.8-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (52 kB)
+#10 6.660      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.8/52.8 kB 2.4 MB/s eta 0:00:00
+#10 6.820 Collecting mlflow==3.17.2 (from -r requirements-train.txt (line 4))
+#10 6.857   Downloading mlflow-3.17.2-py3-none-any.whl.metadata (50 kB)
+#10 6.878      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.2/50.2 kB 7.5 MB/s eta 0:00:00
+#10 7.007 Collecting python-dateutil>=2.8.2 (from pandas==3.0.2->-r requirements.txt (line 3))
+#10 7.076   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+#10 7.416 Collecting scipy>=1.10.0 (from scikit-learn==1.8.0->-r requirements.txt (line 4))
+#10 7.456   Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+#10 7.473      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 4.3 MB/s eta 0:00:00
+#10 7.590 Collecting threadpoolctl>=3.2.0 (from scikit-learn==1.8.0->-r requirements.txt (line 4))
+#10 7.621   Downloading threadpoolctl-3.8.0-py3-none-any.whl.metadata (29 kB)
+#10 7.804 Collecting starlette>=0.46.0 (from fastapi==0.162.0->-r requirements.txt (line 7))
+#10 7.917   Downloading starlette-1.10.0-py3-none-any.whl.metadata (6.6 kB)
+#10 8.006 Collecting typing-extensions>=4.8.0 (from fastapi==0.162.0->-r requirements.txt (line 7))
+#10 8.102   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+#10 8.143 Collecting typing-inspection>=0.4.2 (from fastapi==0.162.0->-r requirements.txt (line 7))
+#10 8.175   Downloading typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+#10 8.214 Collecting annotated-doc>=0.0.2 (from fastapi==0.162.0->-r requirements.txt (line 7))
+#10 8.251   Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+#10 8.320 Collecting opentelemetry-api>=1.44.0 (from fastapi==0.162.0->-r requirements.txt (line 7))
+#10 8.396   Downloading opentelemetry_api-1.45.2-py3-none-any.whl.metadata (1.4 kB)
+#10 8.725 Collecting click>=7.0 (from uvicorn==0.54.0->uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 8.755   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+#10 8.797 Collecting h11>=0.8 (from uvicorn==0.54.0->uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 8.834   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+#10 8.884 Collecting annotated-types>=0.6.0 (from pydantic==2.14.2->-r requirements.txt (line 9))
+#10 8.911   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+#10 10.54 Collecting pydantic-core==2.50.2 (from pydantic==2.14.2->-r requirements.txt (line 9))
+#10 10.58   Downloading pydantic_core-2.50.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.5 kB)
+#10 10.96 Collecting contourpy>=1.0.1 (from matplotlib==3.10.8->-r requirements-train.txt (line 3))
+#10 11.05   Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (5.5 kB)
+#10 11.40 Collecting cycler>=0.10 (from matplotlib==3.10.8->-r requirements-train.txt (line 3))
+#10 11.43   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+#10 11.80 Collecting fonttools>=4.22.0 (from matplotlib==3.10.8->-r requirements-train.txt (line 3))
+#10 11.84   Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (139 kB)
+#10 11.90      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.9/139.9 kB 2.5 MB/s eta 0:00:00
+#10 12.12 Collecting kiwisolver>=1.3.1 (from matplotlib==3.10.8->-r requirements-train.txt (line 3))
+#10 12.16   Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+#10 12.18 Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.11/site-packages (from matplotlib==3.10.8->-r requirements-train.txt (line 3)) (26.3)
+#10 12.66 Collecting pillow>=8 (from matplotlib==3.10.8->-r requirements-train.txt (line 3))
+#10 12.70   Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.1 kB)
+#10 13.13 Collecting pyparsing>=3 (from matplotlib==3.10.8->-r requirements-train.txt (line 3))
+#10 13.16   Downloading pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+#10 13.30 Collecting mlflow-skinny==3.17.2 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 13.42   Downloading mlflow_skinny-3.17.2-py3-none-any.whl.metadata (51 kB)
+#10 13.45      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB 9.3 MB/s eta 0:00:00
+#10 13.52 Collecting mlflow-tracing==3.17.2 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 13.56   Downloading mlflow_tracing-3.17.2-py3-none-any.whl.metadata (19 kB)
+#10 13.76 Collecting Flask-CORS<7 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 13.81   Downloading flask_cors-6.0.5-py3-none-any.whl.metadata (5.4 kB)
+#10 13.87 Collecting Flask<4 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 13.90   Downloading flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+#10 14.98 Collecting aiohttp<4,>=3.7.0 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 15.02   Downloading aiohttp-3.14.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+#10 15.20 Collecting alembic!=1.10.0,<2 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 15.24   Downloading alembic-1.20.1-py3-none-any.whl.metadata (7.3 kB)
+#10 15.79 Collecting cryptography<51,>=43.0.0 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 15.82   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+#10 15.88 Collecting docker<8,>=4.0.0 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 15.91   Downloading docker-7.2.0-py3-none-any.whl.metadata (3.8 kB)
+#10 16.00 Collecting graphene<4 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 16.03   Downloading graphene-3.4.3-py2.py3-none-any.whl.metadata (6.9 kB)
+#10 16.10 Collecting gunicorn<27 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 16.16   Downloading gunicorn-26.2.0-py3-none-any.whl.metadata (5.5 kB)
+#10 16.21 Collecting huey<4,>=2.5.4 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 16.24   Downloading huey-3.5.4-py3-none-any.whl.metadata (5.7 kB)
+#10 16.50 Collecting pyarrow<26,>=4.0.0 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 16.54   Downloading pyarrow-25.0.1-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+#10 16.64 Collecting skops<1 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 16.67   Downloading skops-0.16.0-py3-none-any.whl.metadata (4.3 kB)
+#10 17.38 Collecting sqlalchemy<3,>=1.4.0 (from mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 17.42   Downloading sqlalchemy-2.1.8-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (9.7 kB)
+#10 17.75 Collecting httptools>=0.8.0 (from uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 17.78   Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+#10 17.85 Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 17.89   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+#10 18.17 Collecting uvloop>=0.15.1 (from uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 18.20   Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+#10 18.63 Collecting watchfiles>=0.20 (from uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 18.66   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+#10 19.00 Collecting websockets>=13.0 (from uvicorn[standard]==0.54.0->-r requirements.txt (line 8))
+#10 19.04   Downloading websockets-17.4-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+#10 19.16 Collecting anyio!=4.15.0,<5,>=3.6.2 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 19.21   Downloading anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+#10 19.34 Collecting cachetools<8,>=5.0.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 19.37   Downloading cachetools-7.3.0-py3-none-any.whl.metadata (5.5 kB)
+#10 19.44 Collecting cloudpickle<4 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 19.47   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+#10 19.60 Collecting databricks-sdk<1,>=0.20.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 19.63   Downloading databricks_sdk-0.162.0-py3-none-any.whl.metadata (44 kB)
+#10 19.65      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.3/44.3 kB 4.1 MB/s eta 0:00:00
+#10 20.00 Collecting gitpython<4,>=3.1.9 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 20.03   Downloading gitpython-3.2.1-py3-none-any.whl.metadata (13 kB)
+#10 20.13 Collecting importlib_metadata!=4.7.0,<10,>=3.7.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 20.17   Downloading importlib_metadata-9.1.0-py3-none-any.whl.metadata (4.5 kB)
+#10 20.29 Collecting opentelemetry-proto<3,>=1.9.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 20.32   Downloading opentelemetry_proto-1.45.2-py3-none-any.whl.metadata (2.3 kB)
+#10 20.41 Collecting opentelemetry-sdk<3,>=1.9.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 20.44   Downloading opentelemetry_sdk-1.45.2-py3-none-any.whl.metadata (1.6 kB)
+#10 20.96 Collecting protobuf<8,>=3.12.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.01   Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+#10 21.14 Collecting requests<3,>=2.17.3 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.17   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+#10 21.29 Collecting sqlparse<1,>=0.4.0 (from mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.38   Downloading sqlparse-0.6.1-py3-none-any.whl.metadata (6.9 kB)
+#10 21.49 Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.56   Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+#10 21.61 Collecting aiosignal>=1.4.0 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.65   Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+#10 21.70 Collecting attrs>=17.3.0 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.73   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+#10 21.87 Collecting frozenlist>=1.1.1 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 21.93   Downloading frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+#10 23.36 Collecting multidict<8.0,>=4.5 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 23.39   Downloading multidict-7.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+#10 23.57 Collecting propcache>=0.2.0 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 23.60   Downloading propcache-0.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+#10 24.13 Collecting yarl<2.0,>=1.25.1 (from aiohttp<4,>=3.7.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 24.20   Downloading yarl-1.25.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (111 kB)
+#10 24.26      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.6/111.6 kB 2.1 MB/s eta 0:00:00
+#10 24.36 Collecting Mako (from alembic!=1.10.0,<2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 24.39   Downloading mako-1.4.3-py3-none-any.whl.metadata (2.9 kB)
+#10 24.68 Collecting cffi>=2.0.0 (from cryptography<51,>=43.0.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 24.73   Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+#10 25.06 Collecting urllib3>=1.26.0 (from docker<8,>=4.0.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.09   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+#10 25.16 Collecting blinker>=1.9.0 (from Flask<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.22   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#10 25.28 Collecting itsdangerous>=2.2.0 (from Flask<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.31   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#10 25.38 Collecting jinja2>=3.1.2 (from Flask<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.41   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#10 25.53 Collecting markupsafe>=2.1.1 (from Flask<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.57   Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#10 25.66 Collecting werkzeug>=3.1.0 (from Flask<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.69   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+#10 25.90 Collecting graphql-core<3.3,>=3.1 (from graphene<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 25.94   Downloading graphql_core-3.2.13-py3-none-any.whl.metadata (11 kB)
+#10 25.99 Collecting graphql-relay<3.3,>=3.1 (from graphene<4->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 26.02   Downloading graphql_relay-3.2.0-py3-none-any.whl.metadata (12 kB)
+#10 26.04 Collecting python-dateutil>=2.8.2 (from pandas==3.0.2->-r requirements.txt (line 3))
+#10 26.08   Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+#10 26.25 Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==3.0.2->-r requirements.txt (line 3))
+#10 26.29   Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+#10 26.41 Collecting prettytable>=3.9 (from skops<1->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 26.45   Downloading prettytable-3.18.0-py3-none-any.whl.metadata (37 kB)
+#10 26.72 Collecting idna>=2.8 (from anyio!=4.15.0,<5,>=3.6.2->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 26.77   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+#10 27.27 Collecting pycparser (from cffi>=2.0.0->cryptography<51,>=43.0.0->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 27.31   Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+#10 27.45 Collecting certifi>=2026.10.19 (from databricks-sdk<1,>=0.20.0->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 27.53   Downloading certifi-2026.10.23-py3-none-any.whl.metadata (2.5 kB)
+#10 27.71 Collecting google-auth~=2.0 (from databricks-sdk<1,>=0.20.0->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 27.74   Downloading google_auth-2.62.1-py3-none-any.whl.metadata (6.0 kB)
+#10 27.95 Collecting gitdb<5,>=4.0.1 (from gitpython<4,>=3.1.9->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 27.99   Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+#10 28.16 Collecting zipp>=3.20 (from importlib_metadata!=4.7.0,<10,>=3.7.0->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 28.20   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+#10 28.44 Collecting opentelemetry-semantic-conventions==0.66b2 (from opentelemetry-sdk<3,>=1.9.0->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 28.49   Downloading opentelemetry_semantic_conventions-0.66b2-py3-none-any.whl.metadata (2.4 kB)
+#10 28.59 Collecting wcwidth>=0.3.5 (from prettytable>=3.9->skops<1->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 28.62   Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (23 kB)
+#10 29.27 Collecting charset_normalizer<4,>=2 (from requests<3,>=2.17.3->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 29.31   Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+#10 29.32      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.4/46.4 kB 4.8 MB/s eta 0:00:00
+#10 29.85 Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython<4,>=3.1.9->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 29.88   Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+#10 29.99 Collecting pyasn1-modules>=0.2.1 (from google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 30.02   Downloading pyasn1_modules-0.4.2-py3-none-any.whl.metadata (3.5 kB)
+#10 30.24 Collecting pyasn1<0.7.0,>=0.6.1 (from pyasn1-modules>=0.2.1->google-auth~=2.0->databricks-sdk<1,>=0.20.0->mlflow-skinny==3.17.2->mlflow==3.17.2->-r requirements-train.txt (line 4))
+#10 30.27   Downloading pyasn1-0.6.5-py3-none-any.whl.metadata (8.4 kB)
+#10 30.36 Downloading numpy-2.4.4-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.9 MB)
+#10 36.68    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.9/16.9 MB 3.0 MB/s eta 0:00:00
+#10 36.74 Downloading pandas-3.0.2-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (11.3 MB)
+#10 39.48    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.3/11.3 MB 4.2 MB/s eta 0:00:00
+#10 39.52 Downloading scikit_learn-1.8.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (9.1 MB)
+#10 41.47    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.1/9.1 MB 4.7 MB/s eta 0:00:00
+#10 41.52 Downloading joblib-1.5.3-py3-none-any.whl (309 kB)
+#10 41.64    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.1/309.1 kB 2.5 MB/s eta 0:00:00
+#10 41.69 Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+#10 41.85    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 5.2 MB/s eta 0:00:00
+#10 41.90 Downloading fastapi-0.162.0-py3-none-any.whl (148 kB)
+#10 41.92    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.9/148.9 kB 9.7 MB/s eta 0:00:00
+#10 41.95 Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+#10 41.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.4/87.4 kB 5.8 MB/s eta 0:00:00
+#10 42.05 Downloading pydantic-2.14.2-py3-none-any.whl (490 kB)
+#10 42.15    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 490.4/490.4 kB 5.6 MB/s eta 0:00:00
+#10 42.43 Downloading matplotlib-3.10.8-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (8.7 MB)
+#10 45.23    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.7/8.7 MB 3.1 MB/s eta 0:00:00
+#10 45.26 Downloading mlflow-3.17.2-py3-none-any.whl (12.0 MB)
+#10 47.95    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.0/12.0 MB 4.7 MB/s eta 0:00:00
+#10 47.99 Downloading mlflow_skinny-3.17.2-py3-none-any.whl (4.1 MB)
+#10 48.87    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 4.7 MB/s eta 0:00:00
+#10 48.90 Downloading mlflow_tracing-3.17.2-py3-none-any.whl (2.0 MB)
+#10 49.44    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 3.8 MB/s eta 0:00:00
+#10 49.48 Downloading pydantic_core-2.50.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.2 MB)
+#10 50.08    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 3.7 MB/s eta 0:00:00
+#10 50.12 Downloading aiohttp-3.14.5-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.9 MB)
+#10 50.59    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 4.2 MB/s eta 0:00:00
+#10 50.65 Downloading alembic-1.20.1-py3-none-any.whl (270 kB)
+#10 50.73    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 270.4/270.4 kB 3.7 MB/s eta 0:00:00
+#10 50.81 Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+#10 50.85 Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+#10 51.00 Downloading click-8.5.0-py3-none-any.whl (125 kB)
+#10 51.06    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.3/125.3 kB 4.1 MB/s eta 0:00:00
+#10 51.21 Downloading contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (355 kB)
+#10 51.32    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 355.2/355.2 kB 3.4 MB/s eta 0:00:00
+#10 51.36 Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+#10 52.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 3.9 MB/s eta 0:00:00
+#10 52.64 Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+#10 52.75 Downloading docker-7.2.0-py3-none-any.whl (148 kB)
+#10 52.78    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.8/148.8 kB 4.4 MB/s eta 0:00:00
+#10 52.85 Downloading flask-3.1.3-py3-none-any.whl (103 kB)
+#10 52.86    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.4/103.4 kB 7.4 MB/s eta 0:00:00
+#10 52.91 Downloading flask_cors-6.0.5-py3-none-any.whl (16 kB)
+#10 53.07 Downloading fonttools-4.68.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (5.5 MB)
+#10 54.31    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.5/5.5 MB 4.4 MB/s eta 0:00:00
+#10 54.35 Downloading graphene-3.4.3-py2.py3-none-any.whl (114 kB)
+#10 54.42    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.9/114.9 kB 1.9 MB/s eta 0:00:00
+#10 54.47 Downloading gunicorn-26.2.0-py3-none-any.whl (228 kB)
+#10 54.58    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.4/228.4 kB 2.1 MB/s eta 0:00:00
+#10 54.67 Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+#10 54.70 Downloading httptools-0.9.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (499 kB)
+#10 54.78    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 499.1/499.1 kB 6.4 MB/s eta 0:00:00
+#10 54.82 Downloading huey-3.5.4-py3-none-any.whl (135 kB)
+#10 54.85    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.4/135.4 kB 6.2 MB/s eta 0:00:00
+#10 54.92 Downloading kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.4 MB)
+#10 55.15    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 6.3 MB/s eta 0:00:00
+#10 55.18 Downloading opentelemetry_api-1.45.2-py3-none-any.whl (60 kB)
+#10 55.23    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.3/60.3 kB 1.1 MB/s eta 0:00:00
+#10 55.27 Downloading pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+#10 56.86    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 4.5 MB/s eta 0:00:00
+#10 56.91 Downloading pyarrow-25.0.1-cp311-cp311-manylinux_2_28_x86_64.whl (50.1 MB)
+#10 67.45    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 4.9 MB/s eta 0:00:00
+#10 67.48 Downloading pyparsing-3.3.3-py3-none-any.whl (126 kB)
+#10 67.54    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 126.4/126.4 kB 7.9 MB/s eta 0:00:00
+#10 67.58 Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+#10 67.62    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 6.1 MB/s eta 0:00:00
+#10 67.66 Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+#10 67.80 Downloading scipy-1.17.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+#10 75.17    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 35.3/35.3 MB 4.8 MB/s eta 0:00:00
+#10 75.22 Downloading skops-0.16.0-py3-none-any.whl (148 kB)
+#10 75.30    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 148.7/148.7 kB 2.1 MB/s eta 0:00:00
+#10 75.37 Downloading sqlalchemy-2.1.8-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.7 MB)
+#10 76.44    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.7/4.7 MB 4.4 MB/s eta 0:00:00
+#10 76.46 Downloading starlette-1.10.0-py3-none-any.whl (80 kB)
+#10 76.49    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.6/80.6 kB 5.5 MB/s eta 0:00:00
+#10 76.63 Downloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+#10 76.70 Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+#10 76.71    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 9.9 MB/s eta 0:00:00
+#10 76.76 Downloading typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+#10 76.86 Downloading uvloop-0.23.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.0 MB)
+#10 77.72    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.0/4.0 MB 4.7 MB/s eta 0:00:00
+#10 77.77 Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+#10 77.88    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 458.4/458.4 kB 4.0 MB/s eta 0:00:00
+#10 77.93 Downloading websockets-17.4-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
+#10 78.04    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.0/226.0 kB 2.6 MB/s eta 0:00:00
+#10 78.07 Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+#10 78.10 Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+#10 78.16 Downloading anyio-4.16.0-py3-none-any.whl (134 kB)
+#10 78.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.5/134.5 kB 7.8 MB/s eta 0:00:00
+#10 78.23 Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+#10 78.28    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.5/67.5 kB 2.0 MB/s eta 0:00:00
+#10 78.35 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#10 78.41 Downloading cachetools-7.3.0-py3-none-any.whl (19 kB)
+#10 78.45 Downloading cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (217 kB)
+#10 78.53    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.8/217.8 kB 2.9 MB/s eta 0:00:00
+#10 78.58 Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+#10 78.75 Downloading databricks_sdk-0.162.0-py3-none-any.whl (1.2 MB)
+#10 79.05    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 4.0 MB/s eta 0:00:00
+#10 79.08 Downloading frozenlist-1.8.0-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (231 kB)
+#10 79.21    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.1/231.1 kB 1.8 MB/s eta 0:00:00
+#10 79.24 Downloading gitpython-3.2.1-py3-none-any.whl (231 kB)
+#10 79.32    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.5/231.5 kB 2.8 MB/s eta 0:00:00
+#10 79.37 Downloading graphql_core-3.2.13-py3-none-any.whl (268 kB)
+#10 79.41    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 268.2/268.2 kB 6.6 MB/s eta 0:00:00
+#10 79.44 Downloading graphql_relay-3.2.0-py3-none-any.whl (16 kB)
+#10 79.57 Downloading importlib_metadata-9.1.0-py3-none-any.whl (28 kB)
+#10 79.64 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#10 79.67 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#10 79.70    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 6.2 MB/s eta 0:00:00
+#10 79.73 Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#10 79.77 Downloading multidict-7.2.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (510 kB)
+#10 79.89    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 510.1/510.1 kB 5.4 MB/s eta 0:00:00
+#10 79.97 Downloading opentelemetry_proto-1.45.2-py3-none-any.whl (72 kB)
+#10 79.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 72.5/72.5 kB 6.6 MB/s eta 0:00:00
+#10 80.01 Downloading opentelemetry_sdk-1.45.2-py3-none-any.whl (141 kB)
+#10 80.05    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 141.8/141.8 kB 5.3 MB/s eta 0:00:00
+#10 80.08 Downloading opentelemetry_semantic_conventions-0.66b2-py3-none-any.whl (206 kB)
+#10 80.16    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 206.3/206.3 kB 3.3 MB/s eta 0:00:00
+#10 80.20 Downloading prettytable-3.18.0-py3-none-any.whl (37 kB)
+#10 80.26 Downloading propcache-0.5.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (235 kB)
+#10 80.34    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 235.4/235.4 kB 3.1 MB/s eta 0:00:00
+#10 80.38 Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+#10 80.48    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.2/343.2 kB 3.7 MB/s eta 0:00:00
+#10 80.51 Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+#10 80.55    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.1/73.1 kB 2.1 MB/s eta 0:00:00
+#10 80.70 Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+#10 80.74 Downloading sqlparse-0.6.1-py3-none-any.whl (51 kB)
+#10 80.75    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.2/51.2 kB 10.1 MB/s eta 0:00:00
+#10 80.82 Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+#10 80.85    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.7/135.7 kB 3.9 MB/s eta 0:00:00
+#10 80.89 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+#10 80.97    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 228.7/228.7 kB 3.1 MB/s eta 0:00:00
+#10 81.01 Downloading yarl-1.25.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (117 kB)
+#10 81.03    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.7/117.7 kB 9.4 MB/s eta 0:00:00
+#10 81.06 Downloading mako-1.4.3-py3-none-any.whl (80 kB)
+#10 81.09    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 3.4 MB/s eta 0:00:00
+#10 81.14 Downloading certifi-2026.10.23-py3-none-any.whl (135 kB)
+#10 81.19    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 135.1/135.1 kB 2.9 MB/s eta 0:00:00
+#10 81.24 Downloading charset_normalizer-3.5.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (269 kB)
+#10 81.32    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 270.0/270.0 kB 3.8 MB/s eta 0:00:00
+#10 81.35 Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+#10 81.37    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 4.4 MB/s eta 0:00:00
+#10 81.41 Downloading google_auth-2.62.1-py3-none-any.whl (267 kB)
+#10 81.51    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 268.0/268.0 kB 3.0 MB/s eta 0:00:00
+#10 81.54 Downloading idna-3.20-py3-none-any.whl (69 kB)
+#10 81.56    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.6/69.6 kB 7.5 MB/s eta 0:00:00
+#10 81.62 Downloading wcwidth-0.9.4-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (785 kB)
+#10 81.82    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 785.9/785.9 kB 3.9 MB/s eta 0:00:00
+#10 81.85 Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+#10 81.88 Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+#10 81.91    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 3.6 MB/s eta 0:00:00
+#10 81.97 Downloading pyasn1_modules-0.4.2-py3-none-any.whl (181 kB)
+#10 82.01    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 181.3/181.3 kB 5.7 MB/s eta 0:00:00
+#10 82.05 Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+#10 82.09 Downloading pyasn1-0.6.5-py3-none-any.whl (84 kB)
+#10 82.11    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.8/84.8 kB 7.9 MB/s eta 0:00:00
+#10 83.27 Installing collected packages: huey, zipp, websockets, wcwidth, uvloop, urllib3, typing-extensions, threadpoolctl, sqlparse, smmap, six, PyYAML, python-dotenv, pyparsing, pycparser, pyasn1, pyarrow, protobuf, propcache, pillow, numpy, multidict, markupsafe, kiwisolver, joblib, itsdangerous, idna, httptools, h11, gunicorn, graphql-core, frozenlist, fonttools, cycler, cloudpickle, click, charset_normalizer, certifi, cachetools, blinker, attrs, annotated-types, annotated-doc, aiohappyeyeballs, yarl, werkzeug, uvicorn, typing-inspection, sqlalchemy, scipy, requests, python-dateutil, pydantic-core, pyasn1-modules, prettytable, opentelemetry-proto, opentelemetry-api, Mako, jinja2, importlib_metadata, graphql-relay, gitdb, contourpy, cffi, anyio, aiosignal, watchfiles, starlette, scikit-learn, pydantic, pandas, opentelemetry-semantic-conventions, matplotlib, graphene, gitpython, Flask, docker, cryptography, alembic, aiohttp, skops, opentelemetry-sdk, google-auth, Flask-CORS, fastapi, databricks-sdk, mlflow-tracing, mlflow-skinny, mlflow
+#10 121.3 Successfully installed Flask-3.1.3 Flask-CORS-6.0.5 Mako-1.4.3 PyYAML-6.0.3 aiohappyeyeballs-2.7.1 aiohttp-3.14.5 aiosignal-1.4.0 alembic-1.20.1 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.16.0 attrs-26.1.0 blinker-1.9.0 cachetools-7.3.0 certifi-2026.10.23 cffi-2.1.1 charset_normalizer-3.5.2 click-8.5.0 cloudpickle-3.1.2 contourpy-1.3.3 cryptography-50.0.2 cycler-0.12.1 databricks-sdk-0.162.0 docker-7.2.0 fastapi-0.162.0 fonttools-4.68.0 frozenlist-1.8.0 gitdb-4.0.12 gitpython-3.2.1 google-auth-2.62.1 graphene-3.4.3 graphql-core-3.2.13 graphql-relay-3.2.0 gunicorn-26.2.0 h11-0.16.0 httptools-0.9.0 huey-3.5.4 idna-3.20 importlib_metadata-9.1.0 itsdangerous-2.2.0 jinja2-3.1.6 joblib-1.5.3 kiwisolver-1.5.1 markupsafe-3.0.4 matplotlib-3.10.8 mlflow-3.17.2 mlflow-skinny-3.17.2 mlflow-tracing-3.17.2 multidict-7.2.1 numpy-2.4.4 opentelemetry-api-1.45.2 opentelemetry-proto-1.45.2 opentelemetry-sdk-1.45.2 opentelemetry-semantic-conventions-0.66b2 pandas-3.0.2 pillow-13.0.0 prettytable-3.18.0 propcache-0.5.4 protobuf-7.36.2 pyarrow-25.0.1 pyasn1-0.6.5 pyasn1-modules-0.4.2 pycparser-3.12 pydantic-2.14.2 pydantic-core-2.50.2 pyparsing-3.3.3 python-dateutil-2.9.0.post0 python-dotenv-1.2.4 requests-2.34.2 scikit-learn-1.8.0 scipy-1.17.1 six-1.17.0 skops-0.16.0 smmap-5.0.3 sqlalchemy-2.1.8 sqlparse-0.6.1 starlette-1.10.0 threadpoolctl-3.8.0 typing-extensions-4.16.0 typing-inspection-0.4.5 urllib3-2.8.0 uvicorn-0.54.0 uvloop-0.23.0 watchfiles-1.3.0 wcwidth-0.9.4 websockets-17.4 werkzeug-3.1.9 yarl-1.25.1 zipp-4.1.2
+#10 121.3 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#10 121.5 
+#10 121.5 [notice] A new release of pip is available: 24.0 -> 26.3
+#10 121.5 [notice] To update, run: pip install --upgrade pip
+#10 DONE 124.1s
+
+#11 [5/8] COPY src/ ./src/
+#11 DONE 0.2s
+
+#12 [6/8] COPY models/ ./models/
+#12 DONE 0.0s
+
+#13 [7/8] COPY configs/ ./configs/
+#13 DONE 0.0s
+
+#14 [8/8] RUN useradd --create-home --uid 10001 appuser && chown -R appuser /app
+#14 DONE 0.5s
+
+#15 exporting to image
+#15 exporting layers
+#15 exporting layers 39.2s done
+#15 exporting manifest sha256:43f173db7d4607885c13f8898dc242f16514ea55608e30a52d8e4a032449b8e3 0.0s done
+#15 exporting config sha256:2b3af7c426c678e7207f67abeebb2fed6a6eb870a71b3ba13c5019685aa10de3 0.0s done
+#15 exporting attestation manifest sha256:c7db248a04cc2045bc5fd6e745b35257237ee6a040ab37845afe2f6bd95947f4 0.0s done
+#15 exporting manifest list sha256:4d37efd799058c7e5b9c89171b9bac8d4919909c4b624373a7ea5a8199fc1014 0.0s done
+#15 naming to docker.io/library/ml-trainer:1.0 done
+#15 unpacking to docker.io/library/ml-trainer:1.0
+#15 unpacking to docker.io/library/ml-trainer:1.0 7.7s done
+#15 DONE 47.1s
+
+#16 resolving provenance for metadata file
+#16 DONE 0.0s
+ Image ml-trainer:1.0 Built 
+ Container mlops-lab-7-9-trainer-run-874e29816d63 Creating 
+ Container mlops-lab-7-9-trainer-run-874e29816d63 Created 
+2026-11-06 13:52:11,322 INFO Loaded 569 rows x 11 columns from data/raw/breast_cancer.csv
+2026-11-06 13:52:11,336 INFO Cleaning: 0 duplicates dropped, 0 rows without target dropped, 0 invalid values set to NaN
+2026-11-06 13:52:11,373 INFO Train rows: 455 | Test rows: 114
+2026-11-06 13:52:12,349 INFO CV F1 on training data: 0.9444 +/- 0.0244
+2026-11-06 13:52:12,469 INFO Saved inference pipeline to models/model.joblib
+2026-11-06 13:52:12,801 INFO Evaluation: {'accuracy': 0.9561, 'precision': 0.9718, 'recall': 0.9583, 'f1': 0.965, 'roc_auc': 0.9917, 'cv_f1_mean': 0.9444, 'cv_f1_std': 0.0244}
+2026/11/06 13:52:14 INFO mlflow.tracking.fluent: Experiment with name 'mlops-lab-7-9' does not exist. Creating a new experiment.
+2026/11/06 13:52:14 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+2026/11/06 13:52:14 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git branch is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+2026/11/06 13:52:14 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git repository URL is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+
+2026/11/06 13:52:15 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+/usr/local/lib/python3.11/site-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+2026-11-06 13:52:20,519 INFO Logged run 0bf54084e9024c1ca5b8f35d69db24bf to MLflow at http://mlflow:5000
+🏃 View run random_forest at: http://mlflow:5000/#/experiments/1/runs/0bf54084e9024c1ca5b8f35d69db24bf
+🧪 View experiment at: http://mlflow:5000/#/experiments/1
+
+##### Runs visible in MLflow
+{
+  "experiments": [
+    {
+      "experiment_id": "1",
+      "name": "mlops-lab-7-9",
+      "artifact_location": "mlflow-artifacts:/1",
+      "lifecycle_stage": "active",
+      "last_update_time": 1793973134013,
+      "creation_time": 1793973134013
+    },
+    {
+      "experiment_id": "0",
+      "name": "Default",
+      "artifact_location": "mlflow-artifacts:/0",
+      "lifecycle_stage": "active",
+      "last_update_time": 1793972954559,
+      "creation_time": 1793972954559
+    }
+  ]
+}
+##### compose logs (tail)
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/runs/get?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&run_id=0bf54084e9024c1ca5b8f35d69db24bf HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "POST /api/2.0/mlflow/logged-models HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "POST /api/2.0/mlflow/runs/outputs HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/runs/get?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&run_id=0bf54084e9024c1ca5b8f35d69db24bf HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=accuracy&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=precision&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=recall&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=f1&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=roc_auc&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=cv_f1_mean&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/metrics/get-history?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&metric_key=cv_f1_std&run_id=0bf54084e9024c1ca5b8f35d69db24bf&max_results=25000 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "POST /api/2.0/mlflow/runs/log-batch HTTP/1.1" 200 OK
+mlflow-1  | 2026/11/06 13:52:19 INFO huey.consumer.Scheduler: Enqueueing periodic task mlflow.server.jobs.utils.online_scoring_scheduler: 3f91a6cd-3ee3-4839-bac7-a1fc4d6e7889.
+mlflow-1  | [2026-11-06 13:52:19,661] INFO:huey.consumer.Scheduler:Scheduler:Enqueueing periodic task mlflow.server.jobs.utils.online_scoring_scheduler: 3f91a6cd-3ee3-4839-bac7-a1fc4d6e7889.
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/logged-models/m-4479d62698d143a594f1f20be029de06 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/MLmodel HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/python_env.yaml HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/input_example.json HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/requirements.txt HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/model.pkl HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/conda.yaml HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PUT /api/2.0/mlflow-artifacts/artifacts/1/models/m-4479d62698d143a594f1f20be029de06/artifacts/serving_input_example.json HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "PATCH /api/2.0/mlflow/logged-models/m-4479d62698d143a594f1f20be029de06 HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "GET /api/2.0/mlflow/runs/get?run_uuid=0bf54084e9024c1ca5b8f35d69db24bf&run_id=0bf54084e9024c1ca5b8f35d69db24bf HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.3:55872 - "POST /api/2.0/mlflow/runs/update HTTP/1.1" 200 OK
+mlflow-1  | INFO:     172.18.0.1:37560 - "POST /api/2.0/mlflow/experiments/search HTTP/1.1" 200 OK
+mlflow-1  | 2026/11/06 13:52:21 INFO huey: Executing mlflow.server.jobs.utils.online_scoring_scheduler: 3f91a6cd-3ee3-4839-bac7-a1fc4d6e7889
+mlflow-1  | [2026-11-06 13:52:21,762] INFO:huey:Worker-2:Executing mlflow.server.jobs.utils.online_scoring_scheduler: 3f91a6cd-3ee3-4839-bac7-a1fc4d6e7889
+mlflow-1  | 2026/11/06 13:52:21 INFO huey: mlflow.server.jobs.utils.online_scoring_scheduler: 3f91a6cd-3ee3-4839-bac7-a1fc4d6e7889 executed in 0.004s
+mlflow-1  | [2026-11-06 13:52:21,766] INFO:huey:Worker-2:mlflow.server.jobs.utils.online_scoring_scheduler: 3f91a6cd-3ee3-4839-bac7-a1fc4d6e7889 executed in 0.004s
+
+##### down (volume kept) then up
+ Container mlops-lab-7-9-mlflow-1 Stopping 
+ Container mlops-lab-7-9-mlflow-1 Stopped 
+ Container mlops-lab-7-9-mlflow-1 Removing 
+ Container mlops-lab-7-9-mlflow-1 Removed 
+ Network mlops-lab-7-9_default Removing 
+ Network mlops-lab-7-9_default Removed 
+ Network mlops-lab-7-9_default Creating 
+ Network mlops-lab-7-9_default Creating 
+ Network mlops-lab-7-9_default Created 
+ Network mlops-lab-7-9_default Created 
+ Container mlops-lab-7-9-mlflow-1 Creating 
+ Container mlops-lab-7-9-mlflow-1 Created 
+ Container mlops-lab-7-9-api-1 Creating 
+ Container mlops-lab-7-9-api-1 Created 
+ Container mlops-lab-7-9-mlflow-1 Starting 
+ Container mlops-lab-7-9-mlflow-1 Started 
+ Container mlops-lab-7-9-api-1 Starting 
+ Container mlops-lab-7-9-api-1 Started 
+
+##### Persistence check: experiments still present
+{
+  "experiments": [
+    {
+      "experiment_id": "1",
+      "name": "mlops-lab-7-9",
+      "artifact_location": "mlflow-artifacts:/1",
+      "lifecycle_stage": "active",
+      "last_update_time": 1793973134013,
+      "creation_time": 1793973134013
+    },
+    {
+      "experiment_id": "0",
+      "name": "Default",
+      "artifact_location": "mlflow-artifacts:/0",
+      "lifecycle_stage": "active",
+      "last_update_time": 1793972954559,
+      "creation_time": 1793972954559
+    }
+  ]
+}
+##### Cleanup (use 'docker compose down -v' to also delete the MLflow volume)
+ Container mlops-lab-7-9-api-1 Stopping 
+ Container mlops-lab-7-9-api-1 Stopped 
+ Container mlops-lab-7-9-api-1 Removing 
+ Container mlops-lab-7-9-api-1 Removed 
+ Container mlops-lab-7-9-mlflow-1 Stopping 
+ Container mlops-lab-7-9-mlflow-1 Stopped 
+ Container mlops-lab-7-9-mlflow-1 Removing 
+ Container mlops-lab-7-9-mlflow-1 Removed 
+ Network mlops-lab-7-9_default Removing 
+ Network mlops-lab-7-9_default Removed 
